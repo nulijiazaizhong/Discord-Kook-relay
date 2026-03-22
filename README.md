@@ -17,6 +17,7 @@
 - `KOOK_CHANNEL_MAP`（反向映射，可省略，留空时自动反推）
 - `DISCORD_TO_KOOK_ENABLED`（默认 `true`，是否启用 Discord -> KOOK 转发）
 - `KOOK_TO_DISCORD_ENABLED`（默认 `true`，是否启用 KOOK -> Discord 转发）
+- `DISCORD_BOT_MESSAGE_TO_KOOK_ENABLED`（默认 `false`，是否将 Discord 机器人消息转发到 KOOK）
 - `RELAY_EVERYONE_MENTION_ENABLED`（默认 `false`，开启后 Discord/KOOK 的 @所有人 会转发到另一侧）
 - `TRANSLATION_ENABLED`（默认 `true`，是否启用翻译）
 - `TRANSLATION_PROVIDER`（`auto` / `tencent` / `baidu`，默认 `auto`）

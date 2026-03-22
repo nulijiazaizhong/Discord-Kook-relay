@@ -12,6 +12,8 @@ KOOK_CHANNEL_MAP=
 DISCORD_TO_KOOK_ENABLED=true
 # 是否启用 KOOK -> Discord 转发（默认 true）
 KOOK_TO_DISCORD_ENABLED=true
+# 是否将 Discord 机器人消息转发到 KOOK（默认 false）
+DISCORD_BOT_MESSAGE_TO_KOOK_ENABLED=false
 # 是否跨平台同步 @所有人（默认 false）
 RELAY_EVERYONE_MENTION_ENABLED=false
 # 可选：Discord 服务器（Guild）ID，仅用于未来过滤/扩展

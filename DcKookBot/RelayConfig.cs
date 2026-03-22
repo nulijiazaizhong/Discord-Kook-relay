@@ -17,6 +17,7 @@ public sealed class RelayConfig
     public string? KookChannelMap { get; init; }
     public bool DiscordToKookEnabled { get; init; }
     public bool KookToDiscordEnabled { get; init; }
+    public bool DiscordBotMessageToKookEnabled { get; init; }
 
     public bool RelayEveryoneMentionEnabled { get; init; }
 
@@ -49,6 +50,7 @@ public sealed class RelayConfig
             KookChannelMap = GetEnvOptional("KOOK_CHANNEL_MAP"),
             DiscordToKookEnabled = GetEnvBool("DISCORD_TO_KOOK_ENABLED", defaultValue: true),
             KookToDiscordEnabled = GetEnvBool("KOOK_TO_DISCORD_ENABLED", defaultValue: true),
+            DiscordBotMessageToKookEnabled = GetEnvBool("DISCORD_BOT_MESSAGE_TO_KOOK_ENABLED", defaultValue: false),
             RelayEveryoneMentionEnabled = GetEnvBool("RELAY_EVERYONE_MENTION_ENABLED", defaultValue: false),
             TranslationEnabled = GetEnvBool("TRANSLATION_ENABLED", defaultValue: true),
             TranslationProvider = GetEnvOptional("TRANSLATION_PROVIDER") ?? "auto",

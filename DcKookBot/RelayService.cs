@@ -95,7 +95,7 @@ public sealed class RelayService : IAsyncDisposable
             return;
         }
 
-        if (message.Author.IsBot)
+        if (message.Author.IsBot && !_config.DiscordBotMessageToKookEnabled)
         {
             return;
         }
