@@ -1,0 +1,48 @@
+# 复制为 .environment 后填写
+# 必填：Discord 机器人 Token
+DISCORD_TOKEN=
+# 必填：KOOK 机器人 Token
+KOOK_TOKEN=
+# 必填：频道映射（Discord->KOOK），格式：discordChannelId:kookChannelId
+# 多个映射用逗号分隔，如：123:456,789:012
+DISCORD_CHANNEL_MAP=
+# 可选：反向映射（KOOK->Discord），留空则自动反推，如不想将KOOK消息转发到Discord，直接 false
+KOOK_CHANNEL_MAP=
+# 是否启用 Discord -> KOOK 转发（默认 true）
+DISCORD_TO_KOOK_ENABLED=true
+# 是否启用 KOOK -> Discord 转发（默认 true）
+KOOK_TO_DISCORD_ENABLED=true
+# 是否跨平台同步 @所有人（默认 false）
+RELAY_EVERYONE_MENTION_ENABLED=false
+# 可选：Discord 服务器（Guild）ID，仅用于未来过滤/扩展
+DISCORD_GUILD_ID=
+# 可选：KOOK 服务器（Guild）ID，仅用于未来过滤/扩展
+KOOK_GUILD_ID=
+
+# 翻译功能开关（true/false，默认 true）
+TRANSLATION_ENABLED=true
+# 翻译服务提供商：auto / tencent / baidu（默认 auto，按可用凭据自动回退）
+TRANSLATION_PROVIDER=auto
+# 是否自动识别原文语言（默认 true）
+TRANSLATION_AUTO_DETECT_SOURCE=true
+# Discord -> KOOK 源语言（auto/en/zh/jp/kor/...）
+DISCORD_TO_KOOK_SOURCE_LANG=auto
+# Discord -> KOOK 目标语言
+DISCORD_TO_KOOK_TARGET_LANG=zh
+# KOOK -> Discord 源语言
+KOOK_TO_DISCORD_SOURCE_LANG=auto
+# KOOK -> Discord 目标语言
+KOOK_TO_DISCORD_TARGET_LANG=en
+
+# 腾讯云机器翻译（TMT）
+TENCENT_SECRET_ID=
+TENCENT_SECRET_KEY=
+# 腾讯云地域（默认 ap-guangzhou）
+TENCENT_REGION=ap-guangzhou
+
+# 百度翻译开放平台
+BAIDU_APP_ID=
+BAIDU_APP_KEY=
+
+# KOOK 卡片底部署名（示例：WananBot）
+TRANSLATION_BOT_NAME=WananBot
